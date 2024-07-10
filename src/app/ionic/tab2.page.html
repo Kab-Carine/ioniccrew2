@@ -10,6 +10,33 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="container">
+    <div class="input-directive">
+      <ion-input
+        label="Directive :" [(ngModel)]="version" placeholder="Ajoutez une directive....">
+      </ion-input>
+      <ion-button (click)="fun()">Ajouter</ion-button>
+    </div>
+    <div class="input-searchbar">
+      <ion-searchbar label=" Rechercher:" placeholder="Rechercher"></ion-searchbar>
+      <ion-button (click)="fun()">Rechercher</ion-button>
+    </div>
+  </div>
+  <ion-row
+    *ngFor="let  montab of tableau; track item; let  i = index"
+    [ngClass]="(i % 2 === 0) ? 'odd' : 'even'"
+  >
+    {{montab}}
+  </ion-row>
 
-  <app-explore-container name="Ionic"></app-explore-container>
+  <!-- <ion-input type="version" placeholder="Enter un text"></ion-input> -->
+ 
+
+  <ion-item>
+    <ion-label>
+      <h1>{{ version }}</h1>
+    </ion-label>
+  </ion-item>
+  <!-- <input [(ngModel)] = "version"> -->
+  <!-- <app-explore-container name="Ionic"></app-explore-container> -->
 </ion-content>

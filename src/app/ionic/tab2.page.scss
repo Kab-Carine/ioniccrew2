@@ -1,0 +1,39 @@
+ion-row{
+  border-collapse: collapse;
+  border: 1px solid royalblue;
+ padding: 8px;
+ margin-left: 13%;
+ width: 75%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.input-directive{
+  display: flex;
+  justify-content: left;
+  margin-top: 45px;
+  margin-bottom: 30px;
+ 
+}
+
+.input-searchbar{
+  display: flex;
+  justify-content: left;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+ion-input{
+ /* max-width: 25%;*/
+  border: 1px solid blue;
+  border-radius: 2px;
+}
+ion-searchbar{
+  max-width: 75%;
+  padding: 5px;
+}
+
